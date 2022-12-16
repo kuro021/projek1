@@ -13,9 +13,6 @@
     
     <div class="container ">
       <div class="kotak-md-8 d-flex justify-content-center " style="margin-top: 200px;">
-        <audio controls autoplay hidden>
-<source src="https://docs.google.com/uc?export=download&id=13XzF1Y0rQI7Cz77c50VR7AyRmqaK0nJV" type="audio/mpeg">
-</audio>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Ulang?
         </button>
@@ -174,7 +171,11 @@
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script type="text/javascript">
-
+      window.onload = () => {
+   let audio = new Audio('https://docs.google.com/uc?export=download&id=13XzF1Y0rQI7Cz77c50VR7AyRmqaK0nJV');
+       audio.play();
+  }
+ 
      
 
    const typed = new Typed('#typed',{
@@ -184,7 +185,7 @@
   loop : true
 });
 const typed1 =new Typed('#typed1',{
-  strings : ["Oh ya kamu tau gak pada saat senyum kita tidak bisa bernafas?.....................................................Nah kan keliatan cakepnya, canda canda wkkwkw"],
+  strings : ["Oh ya kamu tau gak pada saat senyum kita tidak bisa bernafas?.............................................Nah kan keliatan cakepnya, canda canda wkkwkw"],
   typeSpeed : 45,
   delaySpeed : 0,
   loop : true
