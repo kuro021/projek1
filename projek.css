@@ -1,0 +1,22 @@
+
+.progresbar{
+    position: absolute;
+    height: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(143, 91, 228);
+    animation: progress-animation 5s forwards;
+}
+.progresbar12detik{
+    position: absolute;
+    height: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(143, 91, 228);
+    animation: progress-animation 12s forwards;
+}
+
+@keyframes progress-animation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
