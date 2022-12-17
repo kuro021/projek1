@@ -203,7 +203,9 @@ const typed1 =new Typed('#typed1',{
 
 
 
-
+document.getElementById('exampleModal').addEventListener('shown.bs.modal', () => {
+     document.getElementById("audio_mp3").play();
+})
   exampleModal2.addEventListener('shown.bs.modal', () => {
      document.getElementById("audio_mp3").play();
     setTimeout(() => {
