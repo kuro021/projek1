@@ -190,7 +190,7 @@ const typed1 =new Typed('#typed1',{
 });
    $(window).on('load', function() {
         $("#exampleModal").modal('show');
-      document.getElementById("audio_mp3").play();
+     
     });
       
   const exampleModal2 = document.getElementById('exampleModal2')
@@ -205,6 +205,7 @@ const typed1 =new Typed('#typed1',{
 
 
   exampleModal2.addEventListener('shown.bs.modal', () => {
+     document.getElementById("audio_mp3").play();
     setTimeout(() => {
      $('#button2').click()
      }, 5000)
