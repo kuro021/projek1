@@ -170,12 +170,7 @@
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script type="text/javascript">
-  
-  window.addEventListener('load', 
-  function() { 
-    document.getElementById("audio_mp3").play();
-    console.log('sukses');
-  }, false);
+ 
  
      
 
@@ -191,9 +186,12 @@ const typed1 =new Typed('#typed1',{
   delaySpeed : 0,
   loop : true
 });
-      $(document).ready(function(){
+   $(window).on('load', function() {
         $("#exampleModal").modal('show');
+      document.getElementById("audio_mp3").play();
+    console.log('sukses');
     });
+      
   const exampleModal2 = document.getElementById('exampleModal2')
   const exampleModal3 = document.getElementById('exampleModal3')
   const exampleModal4 = document.getElementById('exampleModal4')
