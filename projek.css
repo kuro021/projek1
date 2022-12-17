@@ -15,13 +15,13 @@
     background-color: rgb(143, 91, 228);
     animation: progress-animation 12s forwards;
 }
-.progresbar10detik{
+.progresbar11detik{
     position: absolute;
     height: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: rgb(143, 91, 228);
-    animation: progress-animation 10.5s forwards;
+    animation: progress-animation 11s forwards;
 }
 
 @keyframes progress-animation {
